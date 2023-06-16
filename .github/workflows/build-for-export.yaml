@@ -14,7 +14,7 @@ jobs:
 
       - name: Build
         run: |
-          make all
+          sudo make all
 
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
