@@ -16,7 +16,7 @@ jobs:
         uses: addnab/docker-run-action@v3
         with:
           image: crossdiver/asvs-document-builder:latest
-          options: -v ${{ github.workspace }}/5.0:/data -v ${{ github.workspace }}/docker:/scripts -e TARGET=5.0
+          options: -u root -v ${{ github.workspace }}/5.0:/data -v ${{ github.workspace }}/docker:/scripts -e TARGET=5.0 --
           run: |
             /scripts/run.sh
 
