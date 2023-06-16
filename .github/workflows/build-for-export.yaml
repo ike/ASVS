@@ -22,7 +22,7 @@ jobs:
           image: crossdiver/asvs-document-builder:latest
           options: -v ${{ github.workspace }}/5.0:/data -v ${{ github.workspace }}/docker:/scripts -e TARGET=5.0
           run: |
-            ls -al /data
+            /scripts/run.sh
 
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
