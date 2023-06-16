@@ -12,6 +12,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
+      - name: Create folders
+        run: |
+          mkdir -p ${{ github.workspace }}/5.0/build/
+
       - name: Build
         uses: addnab/docker-run-action@v3
         with:
