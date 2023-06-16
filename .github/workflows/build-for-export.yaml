@@ -13,8 +13,12 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Build
-        run: |
-          docker run --rm -v ${{ github.workspace }}/5.0:/data:rw -v ${{ github.workspace }}/docker:/scripts:rw -e "TARGET=5.0" -e "FORMATS=$(FORMATS)" crossdiver/asvs-document-builder
+        uses: addnab/docker-run-action@v3
+        with:
+          image: crossdiver/asvs-document-builder:latest
+          options: -v ${{ github.workspace }}/5.0:/data -v ${{ github.workspace }}/docker:/scripts -e TARGET=5.0
+          run: |
+            /scripts/run.sh
 
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
