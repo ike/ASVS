@@ -8,22 +8,13 @@ jobs:
   build-5:
     runs-on: ubuntu-latest
 
-    container:
-      image: crossdiver/asvs-document-builder:latest
-      env:
-        TARGET: 5.0
-      volumes:
-        - 5.0:/data
-        - docker:/scripts
-
     steps:
       - name: Checkout
         uses: actions/checkout@v3
 
       - name: Build
         run: |
-          make 5.0-clean
-          make 5.0
+          docker run --rm -v ${{ github.workspace }}/5.0:/data:rw -v ${{ github.workspace }}/docker:/scripts:rw -e "TARGET=5.0" -e "FORMATS=$(FORMATS)" crossdiver/asvs-document-builder
 
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
