@@ -370,7 +370,7 @@
         {
           "Shortcode": "V1.5",
           "Ordinal": 5,
-          "Name": "Architektur des Ein- und Ausgabemanagements",
+          "Name": "Architektur des Ein- und Ausgabemanagements ",
           "Items": [
             {
               "Shortcode": "V1.5.1",
@@ -791,7 +791,7 @@
         {
           "Shortcode": "V1.12",
           "Ordinal": 12,
-          "Name": "Sicheres Datei Upload",
+          "Name": "Sicheres Datei Upload ",
           "Items": [
             {
               "Shortcode": "V1.12.1",
@@ -931,7 +931,7 @@
             {
               "Shortcode": "V1.14.5",
               "Ordinal": 5,
-              "Description": "Prüfen Sie, dass Anwendungen auf der Netzwerkebene voneinander separiert sind, z.B. per Sandbox oder Container, um Angreifer auszubremsen und davon abzuhalten, andere Anwendungen anzugreifen, insbesondere wenn sie sensible Aktionen wie eine Deserialisierung durchführen. ([C5](https://owasp.org/www-project-proactive-controls/#div-numbering))",
+              "Description": "Prüfen Sie, dass Anwendungen auf der Netzwerkebene voneinander separiert sind, z.B.  per Sandbox oder Container, um Angreifer auszubremsen und davon abzuhalten, andere Anwendungen anzugreifen, insbesondere wenn sie sensible Aktionen wie eine Deserialisierung durchführen. ([C5](https://owasp.org/www-project-proactive-controls/#div-numbering))",
               "L1": {
                 "Required": false,
                 "Requirement": ""
@@ -978,7 +978,7 @@
       "Shortcode": "V2",
       "Ordinal": 2,
       "ShortName": "Authentication",
-      "Name": "Authentifizierung",
+      "Name": "",
       "Items": [
         {
           "Shortcode": "V2.1",
@@ -1057,7 +1057,7 @@
             {
               "Shortcode": "V2.1.4",
               "Ordinal": 4,
-              "Description": "Prüfen Sie, ob alle druckbaren Unicode-Zeichen, auch Leerzeichen oder Emojis, in Passwörtern zulässig sind.",
+              "Description": "Prüfen Sie, ob alle druckbaren Unicode-Zeichen, auch Leerzeichen oder Emojis,  in Passwörtern zulässig sind.",
               "L1": {
                 "Required": true,
                 "Requirement": "✓"
@@ -1218,7 +1218,7 @@
             {
               "Shortcode": "V2.1.11",
               "Ordinal": 11,
-              "Description": "Prüfen Sie, dass die \"Einfügen\"-Funktion, Passworthilfen der Browser und externe Passwortmanager zugelassen sind.",
+              "Description": "Prüfen Sie, dass die „Einfügen“-Funktion, Passworthilfen der Browser und externe Passwortmanager zugelassen sind.",
               "L1": {
                 "Required": true,
                 "Requirement": "✓"
@@ -1662,7 +1662,7 @@
             {
               "Shortcode": "V2.5.2",
               "Ordinal": 2,
-              "Description": "Prüfen Sie, dass keine Hinweise auf Passwörter oder wissensbasierte Authentifizierung, z.B. \"geheime Fragen\" vorliegen.",
+              "Description": "Prüfen Sie, dass keine Hinweise auf Passwörter oder wissensbasierte Authentifizierung, z.B. „geheime Fragen“ vorliegen.",
               "L1": {
                 "Required": true,
                 "Requirement": "✓"
@@ -1708,7 +1708,7 @@
             {
               "Shortcode": "V2.5.4",
               "Ordinal": 4,
-              "Description": "Prüfen Sie, dass Gemeinschafts- oder Standardkonten, z.B. \"root\", \"admin\", \"Gast\" oder \"sa\" deaktiviert oder gelöscht sind.",
+              "Description": "Prüfen Sie, dass Gemeinschafts- oder Standardkonten, z.B. „root“, „admin“, „Gast“ oder „sa“ deaktiviert oder gelöscht sind.",
               "L1": {
                 "Required": true,
                 "Requirement": "✓"
@@ -1884,7 +1884,7 @@
             {
               "Shortcode": "V2.7.1",
               "Ordinal": 1,
-              "Description": "Prüfen Sie, dass Out-of-Band Authentifikatoren, die NIST \"restricted\" sind, wie z.B. SMS, nicht standardmäßig angeboten werden und dass stärkere Alternativen wie Push-Nachrichten zuerst angeboten werden.",
+              "Description": "Prüfen  Sie, dass Out-of-Band Authentifikatoren, die NIST „restricted“ sind, wie z.B. SMS, nicht standardmäßig angeboten werden und dass stärkere Alternativen wie Push-Nachrichten zuerst angeboten werden.",
               "L1": {
                 "Required": true,
                 "Requirement": "✓"
@@ -2606,7 +2606,7 @@
             {
               "Shortcode": "V3.4.1",
               "Ordinal": 1,
-              "Description": "Prüfen Sie, dass bei Session-Cookies das Attribut 'Secure' gesetzt ist. ([C6](https://owasp.org/www-project-proactive-controls/#div-numbering))",
+              "Description": "Prüfen Sie, dass bei Session-Cookies das Attribut „secure“ gesetzt ist. ([C6](https://owasp.org/www-project-proactive-controls/#div-numbering))",
               "L1": {
                 "Required": true,
                 "Requirement": "✓"
@@ -2629,7 +2629,7 @@
             {
               "Shortcode": "V3.4.2",
               "Ordinal": 2,
-              "Description": "Prüfen Sie, dass bei Session-Cookies das Attribut 'HttpOnly' gesetzt ist. ([C6](https://owasp.org/www-project-proactive-controls/#div-numbering))",
+              "Description": "Prüfen Sie, dass bei Session-Cookies das Attribut „HttpOnly“ gesetzt ist. ([C6](https://owasp.org/www-project-proactive-controls/#div-numbering))",
               "L1": {
                 "Required": true,
                 "Requirement": "✓"
@@ -2666,7 +2666,7 @@
                 "Requirement": "✓"
               },
               "CWE": [
-                16
+                1275
               ],
               "NIST": [
                 "7.1.1"
@@ -2675,7 +2675,7 @@
             {
               "Shortcode": "V3.4.4",
               "Ordinal": 4,
-              "Description": "Prüfen Sie, dass Session-Cookies das Präfix '__Host-' verwenden (siehe Referenzen), um die Vertraulichkeit von Session-Cookies zu gewährleisten.",
+              "Description": "Prüfen Sie, dass Session-Cookies das Präfix „__Host-“ verwenden (siehe Referenzen), um die Vertraulichkeit von Session-Cookies zu gewährleisten.",
               "L1": {
                 "Required": true,
                 "Requirement": "✓"
@@ -2879,7 +2879,7 @@
       "Shortcode": "V4",
       "Ordinal": 4,
       "ShortName": "Access",
-      "Name": "Maßnahmen zur Zugriffssteuerung",
+      "Name": "Maßnahmen zur Zugriffssteuerung ",
       "Items": [
         {
           "Shortcode": "V4.1",
@@ -5834,7 +5834,7 @@
         {
           "Shortcode": "V13.1",
           "Ordinal": 1,
-          "Name": "Allgemeine Sicherheit von Web Services",
+          "Name": "Allgemeine Sicherheit von Web Services ",
           "Items": [
             {
               "Shortcode": "V13.1.1",
@@ -6512,7 +6512,7 @@
             {
               "Shortcode": "V14.4.2",
               "Ordinal": 2,
-              "Description": "Prüfen Sie, dass alle API-Antworten die Content-Disposition: attachment; filename=\"api.json\" Header oder einen anderen geeigneten Dateinamen für den Inhaltstyp enthalten.",
+              "Description": "Prüfen Sie, dass alle API-Antworten die Content-Disposition: attachment; filename=„api.json“ Header oder einen anderen geeigneten Dateinamen für den Inhaltstyp enthalten.",
               "L1": {
                 "Required": true,
                 "Requirement": "✓"
@@ -6687,7 +6687,7 @@
             {
               "Shortcode": "V14.5.3",
               "Ordinal": 3,
-              "Description": "Prüfen Sie, dass der CORS-Access-Control-Allow-Origin Header eine strikte Whitelist mit vertrauenswürdigen Domains verwendet und den \"null\"-Ursprung nicht unterstützt.",
+              "Description": "Prüfen Sie, dass der CORS-Access-Control-Allow-Origin Header eine strikte Whitelist mit vertrauenswürdigen Domains verwendet und den „Null“-Ursprung nicht unterstützt.",
               "L1": {
                 "Required": true,
                 "Requirement": "✓"

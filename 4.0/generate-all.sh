@@ -28,7 +28,9 @@ for lang in ${LANGS}; do
     python3 tools/export.py --format csv --language $lang > "$verslong.csv"
     python3 tools/export.py --format csv --language $lang --verify-only true
 
-    ./generate_document.sh $lang $vers
+    if [ -n $(git diff "$verslong.json" "$verslong.flat.json" "$verslong.xml" "$verslong.csv")  ]; then
+      ./generate_document.sh $lang $vers
+    fi
 
   fi
 
