@@ -8,6 +8,6 @@ case $TARGET in
     make clean
     ;;
   *)
-    make $FORMATS
+    make $TARGET $FORMATS
     ;;
 esac
