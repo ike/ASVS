@@ -8,3 +8,9 @@
 # Make git leave Python and shell scripts alone to prevent bugs when running them under Windows Subsystem for Linux bash
 *.py	-text
 *.sh	-text
+
+# Better diff on Microsoft formats
+*.doc diff=word
+*.xsl diff=excel
+*.xlsx diff=zip
+*.docx diff=zip
