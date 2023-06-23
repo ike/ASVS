@@ -28,10 +28,10 @@ for lang in ${LANGS}; do
     python3 tools/export.py --format csv --language $lang > "$verslong.csv"
     python3 tools/export.py --format csv --language $lang --verify-only true
 
-    if [[ -n $GITHUB_SHA ]]; then
+    if [[ -n "$GITHUB_SHA" ]]; then
       diff=$(git diff $GITHUB_SHA "$verslong.json" "$verslong.flat.json" "$verslong.xml" "$verslong.csv")
       echo $diff
-      if [[ -n $diff ]]; then
+      if [[ -n "$diff" ]]; then
         ./generate_document.sh $lang $vers
       fi
     else
