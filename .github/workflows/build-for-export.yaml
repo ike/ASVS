@@ -12,17 +12,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Create folders
-        run: |
-          mkdir -p ${{ github.workspace }}/5.0/build/
-
       - name: Build
-        uses: addnab/docker-run-action@v3
-        with:
-          image: crossdiver/asvs-document-builder:latest
-          options: -v ${{ github.workspace }}/5.0:/data -v ${{ github.workspace }}/docker:/scripts -e TARGET=5.0
-          run: |
-            /scripts/run.sh
+        run: |
+          make all
 
       - name: Commit changes
         uses: EndBug/add-and-commit@v9

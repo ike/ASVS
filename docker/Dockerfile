@@ -146,7 +146,7 @@ FROM latex_base as work_layer
 USER root
 COPY --from=font_base /fonts/adobe-fonts /usr/share/fonts/opentype/adobe-fonts
 RUN fc-cache -f -v "/usr/share/fonts/opentype/adobe-fonts"
-USER pandoc
+#USER pandoc
 
 RUN tlmgr info --list
 
