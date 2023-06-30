@@ -1,4 +1,4 @@
-# Frontispiece TESTING
+# Frontispiece
 
 ## About the Standard
 
