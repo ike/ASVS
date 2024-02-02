@@ -231,6 +231,13 @@ class ASVS:
 
         return si.getvalue()
 
+    def to_excel(self):
+        ''' Returns Excel '''
+        header = ['chapter_id', 'chapter_name', 'section_id', 'section_name', 'req_id', 'req_description', 'level1', 'level2', 'level3', 'cwe', 'nist']
+        
+
+        // use https://xlsxwriter.readthedocs.io/tutorial02.html
+
     def dict_increment(self, dict_obj, dict_key):
         if dict_key not in dict_obj:
             dict_obj[dict_key] = 0
