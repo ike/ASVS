@@ -1,38 +1,27 @@
 # Contributing
 
-**This document applies during 2022 and may change at a future date.**
+<img src="https://owasp.org/www-project-application-security-verification-standard/assets/images/OWASP_ASVS_Linkedin_Banner-01.jpg" width="700px">
 
-<!--
-
-## General description
-
-open issue > discuss, if agreed > pull request
-
-
-## Versions
-
-for what versions what kind of changes are allowed
-
-definition of breaking change
-
-
-## Opening issue
-
-expectation from issue
-
-
-## Pull-request
-
-expectation from PR
--->
+**This document applies during 2024 and may change at a future date.**
 
 ### Introduction
 
 The current status of the ASVS project is as follows:
 
-The ASVS project is planning to release a 5.0 version during 2022 which will be a significant modification, similar to the scale of changes which happened during 4.0.
+The ASVS project is planning to release a 5.0 version during 2024 which will be a significant modification, similar to the scale of changes which happened during 4.0.
  
 We will try, on a best efforts basis, to address issues and push changes to the "bleeding edge" master branch within the 5.0 folder **without altering current numbering** and using tagging ([see below](CONTRIBUTING.md#use-tags-to-describe-the-change)) to make changes clearer. This is in order to make it easier to use this branch on an ongoing basis. However, we will no longer be accepting changes to the 4.0 folder which is now fixed at the 4.0.3 release.
+
+Please also focus attention on the requirements themselves and **not** on the surrounding text or on the introductory chapters (files 0x01-0x04). This because the text might have become outdated where requirements have changed and also because our goal is to significantly cut down this text anyway in 5.0.
+
+### Where do I start?
+
+The most important thing you can do at the moment is give your feedback on open issues which we are currently discussing.
+
+There are two key types right now:
+
+* [![GitHub issue custom search](https://img.shields.io/github/issues-search?query=repo%3Aowasp%2Fasvs%20is%3Aopen%20is%3Aissue%20label%3A%22Community%20wanted%22&style=flat&label=Community%20Wanted&labelColor=%23BFD4F2&color=grey)](https://github.com/OWASP/ASVS/issues?q=is%3Aopen+is%3Aissue+label%3A%22Community+wanted%22) - These are issues where we would really benefit from more eyes on a particular issue.
+* [![GitHub issue custom search](https://img.shields.io/github/issues-search?query=repo%3Aowasp%2Fasvs%20is%3Aopen%20is%3Aissue%20label%3A%22Community%20needed%22&style=flat&label=Community%20Needed&labelColor=%23fbca04&color=grey)](https://github.com/OWASP/ASVS/issues?q=is%3Aopen+is%3Aissue+label%3A%22Community+needed%22) - These are issues where the relevant items will not get progressed without community input.
 
 ### Before you open a Pull Request
 
@@ -103,10 +92,11 @@ Tags must be placed before verification description, example:
 We are also actively looking for translations of the 4.n branch!
 
 If you are interested in creating a translation, here are some pointers for how you can help us:
+
 * Please first of all search the repository to see if there is already a translation for your proposed language. We currently have completed or in-progress translations in the following languages (but please search anyway in case this list is superceeded!):
-	* In-progress
+    * In-progress
         * None
-	* v4.0.3
+    * v4.0.3
         * Spanish
         * Simplified Chinese
         * Arabic
